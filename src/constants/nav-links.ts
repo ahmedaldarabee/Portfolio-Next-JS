@@ -1,0 +1,1 @@
+export const navLinks = ["home","clients","feature","pricing","feedback","sign-in","sign-out"]

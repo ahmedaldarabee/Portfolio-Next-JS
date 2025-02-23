@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* when you want to custom properties with using tailwind*/
+/* 5rem = 5 × 16px = 80px [ rem as a comparing with px ]*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    @apply bg-slate-800
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-yellow-50
+}
+
+section {
+    @apply py-12 md:py-16 lg:py-20
+}
+
+.btn {
+    @apply flex justify-center items-center gap-2 capitalize text-white
+    py-2 px-6 rounded-md transition-all shadow-lg whitespace-normal
+}
+
+.btn-primary {
+    @apply bg-sky-600 hover:bg-sky-500
+}
+
+.btn-secondary {
+    @apply bg-slate-800 hover:bg-sky-700
+}
+
+.btn-outline {
+    @apply border border-slate-600 hover:bg-slate-800
+}
+
+.bubble {
+    @apply absolute -z-10 rounded-full blur-3xl opacity-20
+}
+
+.social-links {
+    @apply w-4 md:w-5 lg:w-6 h-4 md:h-5 lg:h-6 transition-all hover:-translate-y-1 cursor-pointer text-slate-500 hover:text-sky-700
+}
